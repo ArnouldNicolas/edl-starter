@@ -40,7 +40,6 @@ def test_health_check(client):
     assert response.status_code == 200
     assert response.json()["status"] == "healthy"    
 
-
 def test_create_task(client):
     """
     EXEMPLE : Tester un point de terminaison POST (création de données).
